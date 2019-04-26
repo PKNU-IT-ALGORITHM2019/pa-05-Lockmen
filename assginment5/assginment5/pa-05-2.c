@@ -151,13 +151,7 @@ int readLine(FILE *fp, char str[], int limit)
 	return i;
 }
 
-TreeNode *search(TreeNode *x, char word[])
-{
-	if (x == NULL || strcmp(word, x->key->word) == 0) return x;
-	if (strcmp(word, x->key->word) < 0) return search(x->left, word);
-	else return search(x->right, word);
 
-}
 TreeNode *sw(TreeNode *h, char gsword[])
 {
 if(h== NULL)
